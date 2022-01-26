@@ -5,7 +5,10 @@ import os
 import sys
 import shutil
 
-mcdir = Path('/Applications/MultiMC.app/Contents/MacOS/instances/1.16.1-1/.minecraft')
+
+instance_path = input('Path to MC instance: ')
+
+mcdir = Path(instance_path)
 
 os.chdir(Path(__file__).parent.resolve())
 
